@@ -1,5 +1,6 @@
 
 @import "../../libs/normalize-scss/sass/normalize/import-now";
+
 @import "skin";
 @import "variables";
 @import "mixins";
@@ -14,9 +15,40 @@
 @import "header/header-navbar";
 @import "header/header-content";
 
-@import "sections/section-skills";
+@import "sections/section-skills/skills";
+@import "sections/section-skills/skill-item";
+@import "sections/section-skills/skill-item__overlay";
+@import "sections/section-skills/skill-item__image";
+@import "sections/section-skills/skill-item__title";
+@import "sections/section-skills/skill-item__link";
+
 @import "sections/section-about";
 @import "sections/section-form";
 @import "sections/section-posts";
 
 @import "footer";
+
+
+@media (min-height: 691px) {
+  .skill-item {
+    min-height: calc(33.33vh - 40px / 3);
+  }
+}
+
+@media (max-height: 690px) {
+  .skill-item {
+    min-height: calc(230px - 40px / 3);
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+}

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size;
+  font-family: $font-main;
+  color: #637588;
+  letter-spacing: 0.1em;
+  overflow-y: scroll;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  font-family: $font-header;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn {
+  display: flex;
+  letter-spacing: 0.1em;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s;
+}
+
+.btn--light {
+  min-width: 250px;
+  height: 60px;
+  font-size: 1.125rem;
+  background-color: rgba(255, 255, 255, 0.1); /* #ffffff */
+  border: 2px solid #ffffff;
+}
+
+.btn--primary {
+  min-width: 350px;
+  height: 60px;
+  font-size: 1.125rem;
+  background-color: rgba(45, 54, 81, 0.8); /* #2d3651 */
+  border: 2px solid #2d3651;
+}
+
+.btn:hover {
+  background-color: #d66926
+}

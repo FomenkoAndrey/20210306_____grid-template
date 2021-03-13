@@ -1,0 +1,25 @@
+.header-content {
+  position: relative;
+
+  // todo: сгруппировать с меню
+  &__container {
+    max-width: $ul;
+    margin: auto;
+    padding-left: $gap;
+    padding-right: $gap;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+
+    .btn:first-of-type {
+      margin-right: $gap;
+    }
+  }
+
+  &__title {
+    margin: 0 0 53px 0;
+  }
+}
+
