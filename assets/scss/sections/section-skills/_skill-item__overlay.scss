@@ -1,14 +1,11 @@
 
 .skill-item__overlay {
-  position: absolute;
   z-index: 1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 
   transition: opacity 0.5s;
 
   opacity: 0.8;
   background-color: $color-primary;
+
+  @include unlist;
 }
