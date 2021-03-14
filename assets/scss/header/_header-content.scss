@@ -1,20 +1,26 @@
 .header-content {
   position: relative;
 
-  // todo: сгруппировать с меню
   &__container {
-    max-width: $ul;
-    margin: auto;
-    padding-left: $gap;
-    padding-right: $gap;
+    @extend %container;
   }
 
   &__actions {
     display: flex;
     justify-content: center;
 
+    @include sm {
+      align-items: center;
+      flex-direction: column;
+    }
+
     .btn:first-of-type {
-      margin-right: $gap;
+      @include sm-min {
+        margin-right: $gap;
+      }
+      @include sm {
+        margin-bottom: $gap;
+      }
     }
   }
 

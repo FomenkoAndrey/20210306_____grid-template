@@ -1,21 +1,16 @@
 .header-menu {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-
   z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
 
 
   &__container {
     display: grid;
-    grid-template-columns: auto 1fr;
     align-items: center;
 
-    //todo: сгруппировать с контентным блоком
-    max-width: $ul;
-    margin: auto;
-    padding-left: $gap;
-    padding-right: $gap;
+    @extend %container;
+    grid-template-columns: auto 1fr;
   }
 }
